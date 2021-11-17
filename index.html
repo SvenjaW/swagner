@@ -48,83 +48,125 @@ body {font-family: Arial;}
                                                                         
 </head>
                                                                         
-<body style="font-family: Helvetica, sans-serif; margin-left: 80px; margin-top: 20px; background: AliceBlue">
-                        
-  <button class="tablink" onclick="openPage('home')"id="defaultOpen">home</button>
-  <button class="tablink" onclick="openPage('publications')">publications</button>
-  <button class="tablink" onclick="openPage('teaching')">teaching</button>
-  <button class="tablink" onclick="openPage('cv')">cv</button>  
-                                                                     
+<body>
+  <h3>Click on the tabs below:</h3>
+  <div class="tab">
+    <button class="tablinks" onclick="clickHandle(event, 'home')">home</button>
+    <button class="tablinks" onclick="clickHandle(event, 'publications')">publications</button>
+    <button class="tablinks" onclick="clickHandle(event, 'presentations')">presentations</button>
+    <button class="tablinks" onclick="clickHandle(event, 'teaching')">teaching</button>
+    <button class="tablinks" onclick="clickHandle(event, 'technical')">technical</button>
+  </div>
+
   <div id="home" class="tabcontent">
-    <h3>home</h3>
-    <p>Home is where the heart is..</p>
+    <img src="butterfly.jpeg" alt="image">
+    <!-- <img src="../swagner/butterfly.jpeg" style="float: left"-->
+    <h3>MY NAME</h3>
+    <p>I am currently a PhD student in the Centre for Language Evolution at the University of Edinburgh, supervised by [x] and [y]. My research interests lie in the acquisition and processing of inflectional morphology, which I test through artificial language learning experiments, in the lab and online. My PhD focuses on the impact of transparency on the learnability of L2 inflections across populations of speakers of different L1s.</p>
+    <p>I obtained my Master of Arts and my Bachelor of Arts from the University of Freiburg.</p>
+    <p>Apart from research, I am passionate about learning new skills, teaching, and have worked and volunteered as a swimming instructor for over 15 years.</p>
+    <p>You can contact me at s1581727@sms.ed.ac.uk</p>
   </div>
 
   <div id="publications" class="tabcontent">
-    <h3>publications</h3>
-    <p>Some news this fine day!</p>
+    <h4>Conference Proceedings</h4>
+    <p>Wagner, S. Smith, K. Culbertson, J. (2019). Acquiring    agglutinating and fusional languages can be 
+	similarly difficult: Evidence from an adaptive tracking study. Proceedings of the 41st Annual 
+      Conference of the Cognitive Science Society. Cognitive Science Society, Austin, TX.</p>
+    <h4>Theses</h4>
+    <p>Wagner Svenja. The Role of Morphological Language Types in Second Language Acquisition. 
+      Master Thesis. University of Freiburg, 2016. Print.</p>
+    <p>Wagner Svenja. Acquiring Different Types of Morphology. Bachelor Thesis. University of Freiburg, 2014. Print.</p>
   </div>
+   
+   <div id="presentations" class="tabcontent">
+     <h4>Conference and workshop talks</h4>
+     <p>Wagner, Svenja, Smith, Kenny, Culbertson, Jennifer. “The impact of compositionality on the 
+	learnability of fusional and agglutinating word structures.” AILA World Congress, 
+	Groningen, 9-14.08.2020. Presentation. (conference postponed to 2021 due to Covid-19)</p>
+     <p>Wagner, Svenja, Smith, Kenny, Culbertson, Jennifer. “Investigating effects of morphological types 
+	and their word formation patterns in SLA.” Postgraduate Conference, University of 
+	Edinburgh, 31 May 2017. Presentation.</p>
+     <p>Wagner, Svenja. “Acquiring different types of morphology - the role of meaning-to-form 	mapping 
+	principles of grammatical language types in second language acquisition”. EUCOR 
+	Conference, Strasbourg, 22 Apr 2016. Presentation.</p>
+     <p>Wagner, Svenja. “Acquiring different types of morphology – the role of the grammatical type of 	the 
+	mother tongue in SLA.” Postgraduate Conference, University of Edinburgh, 4 June 2015. 
+	Presentation.</p>
+     <p>Wagner, Svenja. “Linguistic creativity and variety mixing in the case of the Cameroonian online 	forum www.cameroon-info.net.” University of Freiburg, 22 May 2014. Workshop
+presentation.</p>
+     <h4>Group-internal talks</h4>
+     <p>Wagner, Svenja, Smith, Kenny, Culbertson, Jennifer. “Acquiring fusional and agglutinating 
+	morphology can be similarly difficult.” Centre for Language Evolution group talk, University 
+       of Edinburgh, 24.09.2019. Presentation.</p>
+     <p>Wagner, Svenja, Smith, Kenny, Culbertson, Jennifer. “The impact of word-formation patterns on the 
+	acquisition of inflectional and agglutinating systems.” Centre for Language Evolution group 
+       talk, University of Edinburgh, 23.10.2018. Presentation.</p>
+     <h4>Poster presentations</h4>
+     <p>Wagner, Svenja, Smith, Kenny, Culbertson, Jennifer. "Acquiring agglutinating and fusional 
+	languages can be similarly difficult: Evidence from an adaptive tracking study." 41st Annual
+Meeting of the Cognitive Science Society, Montréal, 27.07.2019. Poster presentation.</p>
+     <p>Wagner, Svenja, Smith, Kenny, Culbertson, Jennifer. " Agglutinating and fusional languages can be 
+	similarly difficult for second language learners when the systems are small." LOT Summer 
+	School, Utrecht, 08.07.2019. Poster presentation.</p>
+     <p>Wagner, Svenja, Smith, Kenny, Culbertson, Jennifer. "Agglutinative and fusional languages can 
+	bear similar difficulty for second language learners when the systems are small." 
+	Postgraduate Conference, University of Edinburgh, 07.06.2019. Poster presentation.</p>
+     <h4>Research dissemination</h4>
+     <p>Participation in the 3 Minute Thesis Competition at the University of Edinburgh, representing Linguistics and English Language at the College level. Presentation title: "Learning a language – the impact of word structures."</p>
+     </div>
 
-  <div id="teaching" class="tabcontent">
-    <h2>Teaching</h2>
-    <p>During my PhD, I was a tutor for the following courses in <b>Linguistics</b>: Linguistics and English Language introductory course, First Language Acquisition, Second Language
-    Acquisition, Origins and Evolution of Language, and Introduction to Python Programming</p>
-                                                                       
-    <p>in <b>Psychology</b>: Data Analysis for Psychology in R1 - levels 1 and 2, Multivariate Statistics, and Research Methods and Statistics - level 2 <p/> 
-                                                                                                                                        
-    <p>as well as for the Writing Centre.</p>                                                                                                       
-  </div>
+   <div id="teaching" class="tabcontent">
+    <h3>Academic (University of Edinburgh)</h3>
+     <h4>Courses in Linguistics and English Language:</h4>
+     <p>First Language Acquisition, Linguistics and English Language 1B, Origins and Evolution of Language, Second Language Acquisition, Introduction to Python Programming</p>
+     <h4>Courses in Psychology (Statistics):</h4>
+     <p>Data Analysis for Psychology in R1, Data Analysis for Psychology in R2, Multivariate Statistics, Research Methods and Statistics 2</p>
+     <h4>PPLS Skills Centre</h4>
+     <p>•	one-to-one appointments with students to improve their academic writing</p>
+<p>•	one-to-one appointments to help students with statistical analysis for their dissertations; centered around data preparation, visualization and analysis using ANOVA and linear/logistic regression</p>
+     <h3>non-Academic (Swimming)</h3>
+     <p>• Active member of Deutsche Lebens-Rettungs-Gesellschaft e.V. (DLRG), delivering swimming classes for children</p>
+     <p>• Swimming teacher with SwimEasy, Ltd. (Edinburgh) (freelance)</p>
+       
+</div>
+   
+  <div id="technical" class="tabcontent">
+    <h4>Languages</h4>
+    <p>R: applied experience: 7+ years, teaching experience: 2 years</p>
+    <p>JavaScript: applied experience: 4+ years</p>
+    <p>Python: applied experience through occasional projects and workshops: 4+ years, teaching experience: 1 semester</p>
+    <p>HTML, CSS, PHP: occasional use over 4+ years</p>
+    
+    <h4>Statistics</h4>
+    <p>Linear regression, ANOVA, mixed effects logistic regression, polynomial logistic regression</p>
+    
+</div>
 
-  <div id="cv" class="tabcontent">
-    <h3>cv</h3>
-    <p>This is my CV.</p>
-  </div>                                                                   
-                                                                                                            
-                                                                     
-  <h1>[name]</h1>
-  <p>I am a PhD student in the Centre for Language Evolution at the University of Edinburgh, supervised by [x] and [y]. My research interests lie in the
-  acquisition and processing of inflectional morphology,
-  which I test through artificial language learning experiments, in the lab and online. My PhD focuses on the impact of transparency on the learnability of L2 inflections across
-  populations of speakers of different L1s.</p> 
-  <p>I obtained my Master of Arts and my Bachelor of Arts from the University of Freiburg.</p> 
-                                                                        
-  <p>Apart from research, I am passionate about learning new skills, teaching, and have worked and volunteered as a swimming instructor for over 15 years.</p>                                                                      
-                                                                       
-  <p>You can contact me at s1581727@sms.ed.ac.uk</p>                                                                      
-                                                                        
-  <h2>Publications</h2>
-                                                                      
-  <h2>Teaching</h2>
-  <p>During my PhD, I was a tutor for the following courses:</p>
-  <p>in <b>Linguistics</b>: Linguistics and English Language introductory course, First Language Acquisition, Second Language Acquisition, Origins and Evolution of Language, and 
-  Introduction to Python Programming</p>
-                                                                       
-  <p>in <b>Psychology</b>: Data Analysis for Psychology in R1 - levels 1 and 2, Multivariate Statistics, and Research Methods and Statistics - level 2 </p> 
-                                                                                                                                        
-  <p>as well as for the Writing Centre.</p> 
-  </div>
-                                 
 <script>
-function openPage(evt, cityName) {
-  var i, tabcontent, tablinks;
+function clickHandle(evt, animalName) {
+  let i, tabcontent, tablinks;
+
+  // This is to clear the previous clicked content.
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
+
+  // Set the tab to be "active".
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+
+  // Display the clicked tab and set it to active.
+  document.getElementById(animalName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-</script>                                 
-                                 
-                                 
-                                 
- 
-</body>
-</html>                
+</script>
+
+ </body>
+</html>              
                                                                         
                                                                         
                                                                         
